@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class CommonConfig {
 
     @Bean
-    @LoadBalanced
+    @LoadBalanced      //ribbon的负载均衡注解
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
